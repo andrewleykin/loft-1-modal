@@ -1,9 +1,10 @@
-/* Файл стилей */
+/* Файл стилей */
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: Arial;
 }
 
 section {
@@ -23,13 +24,21 @@ section {
 /* Ссылка */
 .link {
 	display: block;
-	padding: 20px 30px;
+	padding: 25px 35px;
 	background: #74b9ff;
-	font-size: 20px;
+	font-size: 18px;
 	text-transform: uppercase;
 	color: #fff;
-	font-weight: 700;
+	font-weight: 600;
 	cursor: pointer;
+	border: 2px solid transparent;
+	border-radius: 50px;
+	letter-spacing: 0.5px;
+	outline: none;
+}
+
+.link:focus {
+	border: 2px solid #0984e3;
 }
 
 /* Модальное окно */
@@ -47,22 +56,23 @@ section {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	max-width: 660px;
+	max-width: 400px;
 	background: #FFF;
 }
 
 .modal__content {
-	padding: 20px 10px;
+	padding: 40px 30px;
+	text-align: center;
 }
 
 .modal__title {
 	font-size: 18px;
 	text-transform: uppercase;
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 }
 
 .modal__text {
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 
 .modal__close {
@@ -74,6 +84,7 @@ section {
 	outline: none;
 	color: white;
 	border: 2px solid transparent;
+	border-radius: 50px;
 }
 
 .modal__close:focus {
