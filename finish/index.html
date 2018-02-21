@@ -3,22 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Loftschool - Modal</title>
+	<!-- Наши стили -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="wrapper">
-		<button class="link">Открыть модальное окно</button>
+		<!-- Ссылка для открытия модального окна -->
+		<button class="link" type="button">Открыть модальное окно</button>
+		<!-- Модальное окно -->
+		<!-- Класс modal--hide скрывает наше модальное окно -->
 		<div class="modal modal--hide">
 			<div class="modal__block">
 				<div class="modal__content">
-					<h4 class="modal__title">Заголовок 1</h4>
-					<p class="modal__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, alias accusamus! Obcaecati deserunt aspernatur modi iste natus, doloremque repudiandae voluptates rerum, fugit enim esse, consectetur maiores rem quae? Maxime odio nemo aliquid tempore sunt tempora eveniet laboriosam sit, quidem neque!</p>
-					<button class="modal__close" href="#">Закрыть 1</button>
+					<h4 class="modal__title">Заголовок</h4>
+					<p class="modal__text">Разнообразный и богатый опыт новая модель организационной деятельности представляет собой интересный эксперимент проверки существенных финансовых условий.</p>
+					<!-- Кнопка для закрытия модального окна -->
+					<button class="modal__close" type="button">Закрыть</button>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- Покдлючаем библиотеку Jquery с cdn -->
 	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<!-- Наш скрипт -->
 	<script src="js/app.js"></script>
 </body>
 </html>
